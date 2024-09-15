@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Centering text */
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 4rem; /* Larger font for header */
+    color: #2c6a4a;
+    font-weight: bold; /* Make it bold for emphasis */
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.category {
+    text-align: center;
+    width: 30%;
+}
+
+.category img {
+    width: 100%; /* Full width of the container */
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.btn {
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    background-color: #2c6a4a;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1f5232; /* Darken button on hover */
+}
+
+/* Fun Stuff Section */
+#fun {
+    background-color: #e6e6e6;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#fun h2 {
+    font-size: 3rem;
+    color: #2c6a4a;
+    margin-bottom: 30px;
+}
+
+#fun p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Image gallery for the Fun Stuff section */
+.fun-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure images wrap if screen size is small */
+}
+
+.fun-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cool Stuff Section */
+#cool {
+    background-color: #e6e6e6; /* Light gray background to match your style */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#cool h2 {
+    font-size: 3rem;
+    color: #2c6a4a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#cool p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Projects grid layout */
+.projects {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly between projects */
+    flex-wrap: wrap; /* Make it responsive */
+}
+
+.project {
+    text-align: center;
+    margin: 10px; /* Add some space between the projects */
+    width: 30%; /* Each project takes up 30% of the container width */
+}
+
+.project img {
+    width: 100%; /* Ensure image fills the container */
+    height: 200px; /* Fix the height to make all images the same size */
+    object-fit: cover; /* Maintain aspect ratio and crop excess parts if needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Serious Stuff Section */
+#serious {
+    background-color: #e6e6e6;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#serious h2 {
+    font-size: 3rem;
+    color: #2c6a4a;
+    margin-bottom: 30px;
+}
+
+#serious .achievements, #serious .experiences {
+    background-color: #808c9c;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+}
+
+#serious h3 {
+    font-size: 1.5rem;
+    color: #2c6a4a;
+    margin-bottom: 20px;
+}
+
+.achievements, .experiences {
+    width: 40%;
+    padding: 20px;
+    background-color: #666f7f; /* Darker background for contrast */
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Flexbox to align the two sections */
+#serious .achievements-experiences {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+footer .resume-btn {
+    background-color: #2c6a4a;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove the underline for the link */
+}
+
+footer .resume-btn:hover {
+    background-color: #1f5232; /* Slightly darker on hover */
+}
